@@ -26,40 +26,40 @@ The AI-Augmented Design Feedback System is an innovative solution aimed at enhan
 - **Extensible Framework**: Easily integrate with other engineering platforms or tools.
 
 ## Project Structure
-'''
+
 AI_Augmented_Design_Feedback_System/
-│
+|
 ├── data/
-│   ├── sample_designs/
-│   │   ├── design1.json
-│   │   └── design2.json
-│   └── generated_data/
-│
+|   ├── sample_designs/
+|   |   ├── design1.json
+|   |   └── design2.json
+|   └── generated_data/
+|
 ├── models/
-│   ├── efficiency_model.pkl
-│   ├── performance_model.pkl
-│   └── safety_model.pkl
-│
+|   ├── efficiency_model.pkl
+|   ├── performance_model.pkl
+|   └── safety_model.pkl
+|
 ├── src/
-│   ├── design_feedback.py
-│   ├── predictive_modeling.py
-│   └── simulations.py
-│
+|   ├── design_feedback.py
+|   ├── predictive_modeling.py
+|   └── simulations.py
+|
 ├── Dataset Generation and Model Training/
-│   ├── Model Training/
-│   │   └── train_model.py
-│   └── Data Generation/
-│       ├── efficiency_data.py
-│       ├── performance_data.py
-│       └── safety_data.py
-│
+|   ├── Model Training/
+|   |   └── train_model.py
+|   └── Data Generation/
+|       ├── efficiency_data.py
+|       ├── performance_data.py
+|       └── safety_data.py
+|
 ├── tests/
-│   ├── test_design_feedback.py
-│   ├── test_predictive_modeling.py
-│   └── test_simulations.py
-│
+|   ├── test_design_feedback.py
+|   ├── test_predictive_modeling.py
+|   └── test_simulations.py
+|
 └── run.py
-'''
+
 
 
 
