@@ -1,0 +1,19 @@
+{
+    "design_id": "design2",
+    "name": "Aluminum Support Frame",
+    "parameters": {
+        "material": "aluminum",
+        "dimensions": {
+            "length": 150,
+            "width": 15,
+            "height": 7
+        },
+        "load": 1500,
+        "temperature_tolerance": 200,
+        "safety_factor": 2.0
+    },
+    "constraints": {
+        "max_stress": 200,
+        "max_deflection": 0.3
+    }
+}
