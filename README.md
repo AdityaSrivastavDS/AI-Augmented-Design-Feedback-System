@@ -1,6 +1,6 @@
 # AI-Augmented Design Feedback System
 
-![Project Banner](path_to_image/banner.png) <!-- Add a banner image if you have one -->
+![Project Banner](banner/structure.jpg) <!-- Add a banner image if you have one -->
 
 ## Table of Contents
 - [Introduction](#introduction)
