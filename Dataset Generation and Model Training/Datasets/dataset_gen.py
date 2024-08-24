@@ -31,9 +31,12 @@ efficiency_data = pd.DataFrame({
     'efficiency_score': np.random.randint(50, 100, size=100)
 })
 
-# Save datasets to CSV
-performance_data.to_csv('performance_data.csv', index=False)
-safety_data.to_csv('safety_data.csv', index=False)
-efficiency_data.to_csv('efficiency_data.csv', index=False)
+# Define the path where you want to save the datasets
+save_path = 'E:\Aditya\Projects\AI_Augmented_Design_Feedback_System\models'
 
-print("Datasets generated and saved as CSV files.")
+# Save datasets to CSV
+performance_data.to_csv(save_path + 'performance_data.csv', index=False)
+safety_data.to_csv(save_path + 'safety_data.csv', index=False)
+efficiency_data.to_csv(save_path + 'efficiency_data.csv', index=False)
+
+print(f"Datasets generated and saved as CSV files in {save_path}")

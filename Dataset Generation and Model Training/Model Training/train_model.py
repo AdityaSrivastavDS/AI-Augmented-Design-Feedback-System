@@ -1,41 +1,38 @@
+import pandas as pd
 from sklearn.linear_model import LinearRegression
 from sklearn.tree import DecisionTreeClassifier
-import pandas as pd
-import pickle
-import os
+from sklearn.ensemble import RandomForestRegressor
+import joblib
 
 # Load datasets
-performance_data = pd.read_csv('Dataset Generation and Model Training//Datasets//performance_data.csv')
-safety_data = pd.read_csv('Dataset Generation and Model Training//Datasets//safety_data.csv')
-efficiency_data = pd.read_csv('Dataset Generation and Model Training//Datasets//efficiency_data.csv')
+performance_data = pd.read_csv('E:/Aditya/Projects/AI_Augmented_Design_Feedback_System/models/performance_data.csv')
+safety_data = pd.read_csv('E:/Aditya/Projects/AI_Augmented_Design_Feedback_System/models/safety_data.csv')
+efficiency_data = pd.read_csv('E:/Aditya/Projects/AI_Augmented_Design_Feedback_System/models/efficiency_data.csv')
 
-# Define the directory where you want to save the models
-model_dir = 'E:/Aditya/Projects/AI_Augmented_Design_Feedback_System/models/'
-os.makedirs(model_dir, exist_ok=True)  # Create the directory if it doesn't exist
+# Performance model
+X_performance = performance_data.drop('performance_score', axis=1)
+y_performance = performance_data['performance_score']
+performance_model = LinearRegression()
+performance_model.fit(X_performance, y_performance)
 
-# Performance Model Training
-X_perf = performance_data.drop('performance_score', axis=1)
-y_perf = performance_data['performance_score']
-model_perf = LinearRegression()
-model_perf.fit(X_perf, y_perf)
-with open(os.path.join(model_dir, 'performance_model.pkl'), 'wb') as f:
-    pickle.dump(model_perf, f)
+# Safety model
+X_safety = safety_data.drop('safety_score', axis=1)
+y_safety = safety_data['safety_score']
+safety_model = DecisionTreeClassifier()
+safety_model.fit(X_safety, y_safety)
 
-# Safety Model Training
-# Assuming the correct column name is 'safety_metric'
-X_safety = safety_data.drop('safety_metric', axis=1)
-y_safety = safety_data['safety_metric']
-model_safety = DecisionTreeClassifier()
-model_safety.fit(X_safety, y_safety)
-with open(os.path.join(model_dir, 'safety_model.pkl'), 'wb') as f:
-    pickle.dump(model_safety, f)
+# Efficiency model
+X_efficiency = efficiency_data.drop('efficiency_score', axis=1)
+y_efficiency = efficiency_data['efficiency_score']
+efficiency_model = RandomForestRegressor()
+efficiency_model.fit(X_efficiency, y_efficiency)
 
-# Efficiency Model Training
-X_eff = efficiency_data.drop('efficiency_score', axis=1)
-y_eff = efficiency_data['efficiency_score']
-model_eff = LinearRegression()
-model_eff.fit(X_eff, y_eff)
-with open(os.path.join(model_dir, 'efficiency_model.pkl'), 'wb') as f:
-    pickle.dump(model_eff, f)
+# Define the path where you want to save the models
+model_save_path = 'E:/Aditya/Projects/AI_Augmented_Design_Feedback_System/models'
 
-print(f"Models trained and saved in the '{model_dir}' directory.")
+# Save models to disk
+joblib.dump(performance_model, model_save_path + 'performance_model.pkl')
+joblib.dump(safety_model, model_save_path + 'safety_model.pkl')
+joblib.dump(efficiency_model, model_save_path + 'efficiency_model.pkl')
+
+print(f"Models trained and saved to {model_save_path}")

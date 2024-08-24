@@ -1,19 +1,24 @@
 {
-    "design_id": "design1",
-    "name": "Basic Steel Beam",
     "parameters": {
-        "material": "steel",
         "dimensions": {
-            "length": 100,
-            "width": 10,
-            "height": 5
+            "length": 12,
+            "width": 8,
+            "height": 4
         },
-        "load": 2000,
-        "temperature_tolerance": 300,
-        "safety_factor": 1.5
+        "material": {
+            "type": "aluminum",
+            "density": 2700
+        }
     },
-    "constraints": {
-        "max_stress": 250,
-        "max_deflection": 0.5
+    "performance": {
+        "load": 3200,
+        "temperature_tolerance": 400,
+        "vibration": 0.7
+    },
+    "safety": {
+        "safety_factor": 1.7
+    },
+    "efficiency": {
+        "efficiency_rating": 0.9
     }
 }
