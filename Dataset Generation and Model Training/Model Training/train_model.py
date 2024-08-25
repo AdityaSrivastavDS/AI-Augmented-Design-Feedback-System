@@ -28,7 +28,7 @@ efficiency_model = RandomForestRegressor()
 efficiency_model.fit(X_efficiency, y_efficiency)
 
 # Define the path where you want to save the models
-model_save_path = 'E:\\Aditya\\Projects\\AI_Augmented_Design_Feedback_System\\models'
+model_save_path = 'E:\\Aditya\\Projects\\AI_Augmented_Design_Feedback_System\\models\\'
 
 # Save models to disk
 joblib.dump(performance_model, model_save_path + 'performance_model.pkl')
