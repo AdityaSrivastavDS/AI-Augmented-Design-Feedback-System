@@ -5,9 +5,9 @@ from sklearn.ensemble import RandomForestRegressor
 import joblib
 
 # Load datasets
-performance_data = pd.read_csv('E:/Aditya/Projects/AI_Augmented_Design_Feedback_System/models/performance_data.csv')
-safety_data = pd.read_csv('E:/Aditya/Projects/AI_Augmented_Design_Feedback_System/models/safety_data.csv')
-efficiency_data = pd.read_csv('E:/Aditya/Projects/AI_Augmented_Design_Feedback_System/models/efficiency_data.csv')
+performance_data = pd.read_csv('E://Aditya/Projects//AI_Augmented_Design_Feedback_System//models//performance_data.csv')
+safety_data = pd.read_csv('E://Aditya//Projects//AI_Augmented_Design_Feedback_System/models//safety_data.csv')
+efficiency_data = pd.read_csv('E://Aditya//Projects//AI_Augmented_Design_Feedback_System//models/efficiency_data.csv')
 
 # Performance model
 X_performance = performance_data.drop('performance_score', axis=1)
