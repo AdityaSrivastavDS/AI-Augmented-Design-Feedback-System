@@ -32,7 +32,7 @@ efficiency_data = pd.DataFrame({
 })
 
 # Define the path where you want to save the datasets
-save_path = 'E:\Aditya\Projects\AI_Augmented_Design_Feedback_System\models'
+save_path = 'E:\\Aditya\\Projects\\AI_Augmented_Design_Feedback_System\\Dataset Generation and Model Training\\Datasets\\'
 
 # Save datasets to CSV
 performance_data.to_csv(save_path + 'performance_data.csv', index=False)
