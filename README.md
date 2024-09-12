@@ -61,7 +61,7 @@ AI_Augmented_Design_Feedback_System/
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/your_username/AI_Augmented_Design_Feedback_System.git
+   git clone https://github.com/AdityaSrivastavDS/AI-Augmented-Design-Feedback-System
    
 2. Navigate to the project directory:
    
