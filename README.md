@@ -1,8 +1,8 @@
-# AI-Augmented Design Feedback System
+# 🏗️AI-Augmented Design Feedback System
 
 ![Project Banner](banner/structure.jpg) <!-- Add a banner image if you have one -->
 
-## Table of Contents
+## 📚Table of Contents
 - [Introduction](#introduction)
 - [Features](#features)
 - [Project Structure](#project-structure)
@@ -13,17 +13,17 @@
 - [License](#license)
 - [Acknowledgements](#acknowledgements)
 
-## Introduction
+## 📑Introduction
 
 The AI-Augmented Design Feedback System is an innovative solution aimed at enhancing mechanical design processes by providing AI-powered feedback on efficiency, safety, and performance. This system utilizes simulations and predictive modeling to suggest improvements, thereby optimizing the product development lifecycle.
 
-## Features
+## 📑Features
 
-- **Efficiency Analysis**: Automatically evaluate design efficiency and suggest improvements.
-- **Safety Assessment**: Predict potential safety issues based on design parameters.
-- **Performance Optimization**: Analyze and optimize design performance through predictive modeling.
-- **Simulation Capabilities**: Run simulations to foresee design outcomes and refine models.
-- **Extensible Framework**: Easily integrate with other engineering platforms or tools.
+- **📌Efficiency Analysis**: Automatically evaluate design efficiency and suggest improvements.
+- **📌Safety Assessment**: Predict potential safety issues based on design parameters.
+- **📌Performance Optimization**: Analyze and optimize design performance through predictive modeling.
+- **📌Simulation Capabilities**: Run simulations to foresee design outcomes and refine models.
+- **📌Extensible Framework**: Easily integrate with other engineering platforms or tools.
 
 ## Project Structure
 
@@ -93,12 +93,12 @@ To train the models:
 - Models will be saved in the models/ directory.
 
 
-## Contributing
+## 📒Contributing
 Contributions are welcome! Please fork this repository and submit a pull request for review.
 
-##License
+## 📜License
 This project is licensed under the MIT License. See the LICENSE file for more details.
 
-##Acknowledgements
+## 📒Acknowledgements
 - Tools Used: Python, scikit-learn, pandas, NumPy, etc.
 - Inspiration: Inspired by the need for automation in mechanical design evaluations.
