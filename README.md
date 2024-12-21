@@ -66,7 +66,7 @@ AI_Augmented_Design_Feedback_System/
 2. Navigate to the project directory:
    ```bash
    cd AI_Augmented_Design_Feedback_System
-  ```
+   ```
 3. Install the required packages:
     ```bash
      pip install -r requirements.txt
