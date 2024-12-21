@@ -1,6 +1,6 @@
 # 🏗️AI-Augmented Design Feedback System
 
-![Project Banner](banner/structure.jpg) <!-- Add a banner image if you have one -->
+![Project Banner](banner/structure.jpg) 
 
 ## 📚Table of Contents
 - [Introduction](#introduction)
@@ -62,15 +62,15 @@ AI_Augmented_Design_Feedback_System/
 1. Clone this repository:
    ```bash
    git clone https://github.com/AdityaSrivastavDS/AI-Augmented-Design-Feedback-System
-   
+   ```
 2. Navigate to the project directory:
-   
+   ```bash
    cd AI_Augmented_Design_Feedback_System
-
+  ```
 3. Install the required packages:
-
+    ```bash
      pip install -r requirements.txt
-
+    ```
 ## Usage
 
 1. Analyzing a Design:
